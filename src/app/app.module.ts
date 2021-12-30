@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { NZ_I18N, zh_CN } from 'ng-zorro-antd/i18n';
 import { CoreModule } from "./core/core.module";
-import { ShareModule } from "./share/share.module";
+import { RouterModule } from "@angular/router";
 
 
 @NgModule({
@@ -11,6 +10,7 @@ import { ShareModule } from "./share/share.module";
   ],
   imports: [
     CoreModule,
+    RouterModule,
   ],
   bootstrap: [ AppComponent ]
 })

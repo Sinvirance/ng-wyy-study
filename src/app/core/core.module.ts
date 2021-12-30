@@ -4,7 +4,7 @@ import { AppRoutingModule } from "../app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ServiceModule } from "../service/service.module";
-import { PageModule } from "../page/page.module";
+import { PagesModule } from "../pages/pages.module";
 import { ShareModule } from "../share/share.module";
 import { registerLocaleData } from "@angular/common";
 import zh from "@angular/common/locales/zh";
@@ -21,7 +21,7 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     ServiceModule,
-    PageModule,
+    PagesModule,
     ShareModule,
     AppRoutingModule,
   ],
