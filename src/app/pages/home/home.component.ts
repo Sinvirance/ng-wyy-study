@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { HomeService } from "../../services/home.service";
-import { Banner } from "../../services/data-types/common.types";
+import { Banner, HotTag, SongSheet } from "../../services/data-types/common.types";
 import { FromToInterface, NzCarouselComponent } from "ng-zorro-antd/carousel";
 
 @Component({
@@ -10,7 +10,8 @@ import { FromToInterface, NzCarouselComponent } from "ng-zorro-antd/carousel";
 })
 export class HomeComponent implements OnInit {
   banners: Banner[] = [];
-
+  hotTags: HotTag[] = [];
+  songSheetList: SongSheet[] = [];
   carouselActiveIndex = 0;
 
   // ! 非空断言操作符，用于断言操作对象是非 null 和非undefined 类型，这只是为了跳过编译器检查
@@ -18,12 +19,30 @@ export class HomeComponent implements OnInit {
   private nzCarousel: any;
 
   constructor(private homeService: HomeService) {
-    this.homeService.getBanners().subscribe(banners => {
-      this.banners = banners;
-    })
+    this.getBanners();
+    this.getHotTags();
+    this.getPersonalSongSheetList();
   }
 
   ngOnInit(): void {
+  }
+
+  private getBanners() {
+    this.homeService.getBanners().subscribe(banners => {
+      this.banners = banners;
+    });
+  }
+
+  private getHotTags() {
+    this.homeService.getHotTags().subscribe( hotTags => {
+      this.hotTags = hotTags;
+    });
+  }
+
+  private getPersonalSongSheetList() {
+    this.homeService.getPersonalSongSheetList().subscribe(songSheets => {
+      this.songSheetList = songSheets;
+    });
   }
 
   onBeforeChange($event: FromToInterface) {
