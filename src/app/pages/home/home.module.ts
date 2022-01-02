@@ -3,15 +3,18 @@ import { NgModule } from '@angular/core';
 import { HomeRoutingModule } from './home-routing.module';
 import { ShareModule } from "../../share/share.module";
 import { HomeComponent } from './home.component';
+import { WyCarouselComponent } from './components/wy-carousel/wy-carousel.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    WyCarouselComponent
   ],
   imports: [
     ShareModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ]
 })
-export class HomeModule { }
+export class HomeModule {
+}
