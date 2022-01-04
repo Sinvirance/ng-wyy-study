@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NzButtonModule } from "ng-zorro-antd/button";
-import { NzLayoutModule } from "ng-zorro-antd/layout";
-import { NzMenuModule } from "ng-zorro-antd/menu";
-import { NzInputModule } from "ng-zorro-antd/input";
-import { NzIconModule } from "ng-zorro-antd/icon";
-import { NzCarouselModule } from "ng-zorro-antd/carousel";
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 
 
 @NgModule({
@@ -15,7 +15,7 @@ import { NzCarouselModule } from "ng-zorro-antd/carousel";
     NzMenuModule,
     NzInputModule,
     NzIconModule,
-    NzCarouselModule,
+    NzCarouselModule
   ],
   exports: [
     NzButtonModule,
@@ -23,7 +23,8 @@ import { NzCarouselModule } from "ng-zorro-antd/carousel";
     NzMenuModule,
     NzInputModule,
     NzIconModule,
-    NzCarouselModule,
+    NzCarouselModule
   ]
 })
-export class NzUiModule { }
+export class NzUiModule {
+}

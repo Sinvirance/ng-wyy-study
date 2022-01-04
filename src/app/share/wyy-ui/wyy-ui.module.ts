@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleSheetComponent } from './single-sheet/single-sheet.component';
-import { PlayCountPipe } from "../play-count.pipe";
+import { PlayCountPipe } from '../play-count.pipe';
 
 
 @NgModule({
@@ -17,4 +17,5 @@ import { PlayCountPipe } from "../play-count.pipe";
     PlayCountPipe
   ]
 })
-export class WyyUiModule { }
+export class WyyUiModule {
+}

@@ -16,3 +16,10 @@ export interface SongSheet {
   playCount: number;
   picUrl: string;
 }
+
+export interface Singer {
+  id: number;
+  name: string;
+  albumSize: number;
+  picUrl: string;
+}

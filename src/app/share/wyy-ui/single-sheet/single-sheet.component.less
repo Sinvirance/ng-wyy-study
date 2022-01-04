@@ -1,14 +1,16 @@
 @import "../../../../assets/styles/varibles";
 @import "../../../../assets/styles/mixins";
 
-.cover{
+.cover {
   position: relative;
   display: block;
-  height:140px;
-  img{
+  height: 140px;
+
+  img {
     height: 100%;
   }
-  .bottom{
+
+  .bottom {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -19,29 +21,35 @@
     justify-content: space-between;
     align-items: center;
     padding: 3px 8px;
-    .num{
-      span{
+
+    .num {
+      span {
         margin-left: 8px;
         vertical-align: text-bottom;
       }
     }
+
     .icon {
       .icon('../images/iconall.png', 14px, 11px);
-      &.erji{
+
+      &.erji {
         background-position: 0 -24px;
       }
-      &.play{
+
+      &.play {
         width: 16px;
-        height:17px;
+        height: 17px;
         background-position: 0 0;
-        &:hover{
+
+        &:hover {
           background-position: 0 -60px;
         }
       }
     }
   }
 }
-.dec{
+
+.dec {
   display: block;
   margin-top: 8px;
   cursor: pointer;
