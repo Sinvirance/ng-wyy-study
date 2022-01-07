@@ -4,13 +4,13 @@ import { CoreModule } from './core/core.module';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    CoreModule,
-  ],
-  bootstrap: [ AppComponent ]
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        CoreModule
+    ],
+    bootstrap: [ AppComponent ]
 })
 export class AppModule {
 }

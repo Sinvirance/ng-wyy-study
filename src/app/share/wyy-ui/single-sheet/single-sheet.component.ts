@@ -1,20 +1,20 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
-import { SongSheet } from "../../../services/data-types/common.types";
+import { SongSheet } from '../../../services/data-types/common.types';
 
 @Component({
-  selector: 'app-single-sheet',
-  templateUrl: './single-sheet.component.html',
-  styleUrls: ['./single-sheet.component.less'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-single-sheet',
+    templateUrl: './single-sheet.component.html',
+    styleUrls: [ './single-sheet.component.less' ],
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SingleSheetComponent implements OnInit {
+    @Input()
+    sheet!: SongSheet;
 
-  @Input()
-  sheet!: SongSheet;
+    constructor() {
+    }
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
 }

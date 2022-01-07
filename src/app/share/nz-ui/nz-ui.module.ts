@@ -8,23 +8,23 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    NzButtonModule,
-    NzLayoutModule,
-    NzMenuModule,
-    NzInputModule,
-    NzIconModule,
-    NzCarouselModule
-  ],
-  exports: [
-    NzButtonModule,
-    NzLayoutModule,
-    NzMenuModule,
-    NzInputModule,
-    NzIconModule,
-    NzCarouselModule
-  ]
+    declarations: [],
+    imports: [
+        NzButtonModule,
+        NzLayoutModule,
+        NzMenuModule,
+        NzInputModule,
+        NzIconModule,
+        NzCarouselModule
+    ],
+    exports: [
+        NzButtonModule,
+        NzLayoutModule,
+        NzMenuModule,
+        NzInputModule,
+        NzIconModule,
+        NzCarouselModule
+    ]
 })
 export class NzUiModule {
 }

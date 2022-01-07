@@ -1,38 +1,38 @@
 import {
-  ChangeDetectionStrategy,
-  Component,
-  EventEmitter,
-  Input,
-  OnInit,
-  Output,
-  TemplateRef,
-  ViewChild
+    ChangeDetectionStrategy,
+    Component,
+    EventEmitter,
+    Input,
+    OnInit,
+    Output,
+    TemplateRef,
+    ViewChild
 } from '@angular/core';
 
 @Component({
-  selector: 'app-wy-carousel',
-  templateUrl: './wy-carousel.component.html',
-  styleUrls: [ './wy-carousel.component.less' ],
-  // OnPush 只有 @Input 属性发生变更时才触发变更检测
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'app-wy-carousel',
+    templateUrl: './wy-carousel.component.html',
+    styleUrls: [ './wy-carousel.component.less' ],
+    // OnPush 只有 @Input 属性发生变更时才触发变更检测
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WyCarouselComponent implements OnInit {
-  @Input()
-  activeIndex = 0;
+    @Input()
+    activeIndex = 0;
 
-  @Output()
-  changeSlide = new EventEmitter<'pre' | 'next'>();
+    @Output()
+    changeSlide = new EventEmitter<'pre' | 'next'>();
 
-  @ViewChild('dot', { static: true })
-  dotRef!: TemplateRef<any>;
+    @ViewChild('dot', { static: true })
+    dotRef!: TemplateRef<any>;
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
-  onChangeSlide(type: 'pre' | 'next') {
-    this.changeSlide.emit(type);
-  }
+    onChangeSlide(type: 'pre' | 'next') {
+        this.changeSlide.emit(type);
+    }
 }

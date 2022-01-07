@@ -6,18 +6,18 @@ import { WyyUiModule } from './wyy-ui/wyy-ui.module';
 import { NzUiModule } from './nz-ui/nz-ui.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NzUiModule,
-    WyyUiModule
-  ],
-  exports: [
-    CommonModule,
-    NzButtonModule,
-    NzUiModule,
-    WyyUiModule
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        NzUiModule,
+        WyyUiModule
+    ],
+    exports: [
+        CommonModule,
+        NzButtonModule,
+        NzUiModule,
+        WyyUiModule
+    ]
 })
 export class ShareModule {
 }

@@ -8,15 +8,15 @@ import { MemberCardComponent } from './components/member-card/member-card.compon
 
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    WyCarouselComponent,
-    MemberCardComponent
-  ],
-  imports: [
-    ShareModule,
-    HomeRoutingModule
-  ]
+    declarations: [
+        HomeComponent,
+        WyCarouselComponent,
+        MemberCardComponent
+    ],
+    imports: [
+        ShareModule,
+        HomeRoutingModule
+    ]
 })
 export class HomeModule {
 }
