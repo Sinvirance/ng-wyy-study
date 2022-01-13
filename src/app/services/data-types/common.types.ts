@@ -15,6 +15,14 @@ export interface SongSheet {
     name: string;
     playCount: number;
     picUrl: string;
+    tracks: Song[];
+    trackIds: trackId[];
+
+}
+
+export interface trackId {
+    id: number;
+    uid: number;
 }
 
 export interface Singer {
@@ -22,4 +30,22 @@ export interface Singer {
     name: string;
     albumSize: number;
     picUrl: string;
+}
+
+export interface Song {
+    id: number;
+    name: string;
+    url: string;
+    ar: Singer[];
+    al: {
+        id: number;
+        name: string;
+        picUrl: string;
+    };
+    dt: number;
+}
+
+export interface SongUrl {
+    id: number;
+    url: string;
 }
